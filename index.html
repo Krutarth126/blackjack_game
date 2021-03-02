@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blackjack Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Blackjack Game Challenge</h1>
+        <span id="bjresult">lets play</span>
+        <div class="box">
+            <div class="yourbox">
+               <h1>Your Score: <span id="yourscore">0</span></h1> 
+            </div>
+            <div class="dealerbox">
+               <h1>Dealer Score: <span id="dealerscore">0</span></h1> 
+            </div>
+        </div>
+        <div class="button">
+            <button id="hit" class="btn btn-primary">hit</button>
+            <button id="stand" class="btn btn-warning">stand</button>
+            <button id="deal" class="btn btn-success">deal</button>
+        </div>
+        <div class="table">
+            <table border="2">
+                <tr>
+                    <th>wins</th>
+                    <th>loss</th>
+                    <th>draws</th>
+                </tr>
+                <tr>
+                    <td> <span id="wins">0</span> </td>
+                    <td> <span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
